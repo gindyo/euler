@@ -1,0 +1,1 @@
+watch(".\*.rb"){|f| system "ruby #{f}"}
