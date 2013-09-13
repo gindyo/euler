@@ -1,5 +1,5 @@
 #Find the largest palindrome made from the product of two 3-digit numbers.
-def plindrom
+def palindrom
 	largest_product = 999*999
 	smallest_product = 100*100
 	
@@ -15,4 +15,4 @@ def plindrom
 	end
 end
 
-puts plindrom
+puts palindrom
