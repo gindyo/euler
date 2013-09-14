@@ -1,15 +1,19 @@
-def primes num, ps, top
-	num = num + 1
-	return  ps if num == 10
-	ps.each do |n|
-		if num % n == 0 
-			primes num, ps, top
-		else
-		  	ps << num
+def primes 
+	ps = [2]
+	3.upto 2000000 do |n|
+		ps.each do |p| 
+			if n % p == 0
+			  break
+			end
+			if p > n**0.5
+				ps << n
+				break
+			end
 		end
 	end
 	ps
 end
+puts primes.inject(:+)
 
-puts primes 1, [1,2], 10
+
  
